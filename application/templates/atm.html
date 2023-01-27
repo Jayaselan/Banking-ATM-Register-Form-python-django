@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM PROJECT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 20%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        .box {
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input {
+            border: none;
+            box-shadow: 3px 5px 10px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="container">
+            <h1>Welcome to our ATM</h1>
+            <div class="box">
+                <label for="">User:</label>
+                <h2>{{username}}</h2>
+                <hr><br>
+                <label for="">Savings</label>
+                <input type="checkbox" name="" id="">
+                <button><a href="saving">yes</a></button><br><br>
+                <label for="">Withdrawal</label>
+                <input type="checkbox" name="Withdrawal" id="">
+                <button><a href="wm">yes</a></button><br><br>
+                <label for="">Mini_Statement</label>
+                <input type="checkbox" name="Mini_Statement" id="">
+                <button><a href="mini_statement">yes</a></button><br><br>
+                <label for="">Balance_check</label>
+                <input type="checkbox" name="Balance_check" id="">
+                <button><a href="balance">yes</a></button>
+            </div>
+        </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

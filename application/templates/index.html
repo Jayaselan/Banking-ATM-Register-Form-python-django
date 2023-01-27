@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM PROJECT</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            /* background-color:  rgba(26, 26, 221, 0); */
+        }
+        .container {
+            width: 20%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+            /* background-color: rgb(219, 130, 219,0.5); */
+            cursor: pointer;            
+        }
+
+        .box {
+            width: 20%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+            cursor: pointer;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input {
+            border: none;
+            box-shadow: 3px 5px 10px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            box-shadow: 5px 3px 56px;
+            margin-top: 6px;
+            background-color:rgba(255, 255, 255, 0.445);
+            
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul>li {
+            height: 34px;
+            width: 30%;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 5px 20px;
+            box-shadow: 6px 3px 56px;
+            border-radius: 5px;
+            margin: 2px;
+        }
+
+        .ints>input {
+            padding: 5px 20px;
+
+        }
+
+        .material-symbols-outlined {
+            padding-top: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">VEDHA</h2>
+        <nav class="nav_link">
+            <ul>
+                <li><a href="enq">Enquire</a></li>
+                <li><a href="contact">Contact_Us</a></li>
+                <li><a href="about">About_Us</a></li>
+                <li><a href="card">Card_BLOCK</a></li>
+                <li><a href="track">Track_Atm</a></li>
+            </ul>
+        </nav>
+        <div class="ints">
+            <input type="search" name="search" id="" placeholder="search_Options">
+
+        </div>
+    </header>
+    <form action="atm" method="POST" autocomplete="off">
+        {% csrf_token %}
+        <div class="container">
+            <h1>login page</h1><br>
+            <h3>Welcome to our ATM</h3><br>
+        </div>
+        <div class="box">
+            <label for=""> <strong> UserName : </strong></label><br><br>
+            <input type="text" name="UserName" id="" placeholder="User Name"><br><br>
+            <label for=""><strong> Password :</strong></label><br><br>
+            <input type="password" name="Password" id="" placeholder="Password"><br> <br>
+            <button> <a href="atm"></a>login</button><br>
+            <a href="create">create Account</a>
+        </div>
+    </form>
+</body>
+
+</html>

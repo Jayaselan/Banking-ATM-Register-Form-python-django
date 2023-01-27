@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM PROJECT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 20%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        .box {
+            width: 20%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input {
+            border: none;
+            box-shadow: 3px 5px 10px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            height: 30px;
+            width: 30%;
+            box-shadow: 1px 2px 2px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="created" method="post" autocomplete="off">{% csrf_token %}
+        <div class="container">
+            <h1>create pages</h1><br>
+            <h3>Welcome to our ATM</h3><br>
+        </div>
+
+        <div class="box">
+            <label for="">
+                UserName
+            </label>
+            <input type="text" name="UserName" id="" placeholder="username"><br><br>
+            <label for="">Password</label>
+            <input type="password" name="Password" id="" placeholder="Password"><br><br>
+            <label for="">Fname</label>
+            <input type="text" name="Fname" id="" placeholder="First Name"><br><br>
+            <label for="">Lname</label>
+            <input type="text" name="Lname" id="" placeholder="Last Name"><br><br>
+            <label for="">Email</label>
+            <input type="email" name="Email" id="" placeholder="Email"><br><br>
+            <label for="">Pass</label>
+            <input type="password" name="Pass1" id="" placeholder="Email Password"><br><br>
+            <label for="">Branch</label>
+            <input type="text" name="Branch" id="" placeholder="Branch"><br><br>
+            <label for="">Mobile</label>
+            <input type="number" name="Mobile" id="" placeholder="Mobile"><br><br>
+            <button><a href="created"></a>create</button>
+        </div>
+    </form>
+</body>
+
+</html>

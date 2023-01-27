@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM PROJECT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 20%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        .box {
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            height: 30px;
+            width: 30%;
+            box-shadow: 1px 2px 2px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="index" method="post" autocomplete="off">{% csrf_token %}
+        <div class="container">
+            <h1>Saving Pages</h1><br>
+            <h3>Welcome to our ATM</h3><br>
+            <div class="box">
+                <p>your savings is :</p> <br>
+                <strong>1000000000000000</strong><br> <br>
+                <hr><br>
+                <p><strong>Thanks for using our ATM</strong></p><br>
+                <hr><br>
+                <button><a href="index">ok</a></button>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

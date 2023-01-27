@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM PROJECT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 20%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 30px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        .box {
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 10px 1px 50px;
+            padding: 15px;
+            padding-left: 20px;
+            margin-top: 2rem;
+            border-radius: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            height: 25px;
+            box-shadow: 5px 2px 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="get_money" method="POST" autocomplete="off">
+        {% csrf_token %}
+
+        <div class="container">
+            <h1>create pages</h1><br>
+            <h3>Welcome to our ATM</h3><br>
+            <div class="box">
+                <label for=""> <strong> Amount: </strong></label><br><br>
+                <input type="text" name="Amount" id=""><br><br>
+                <hr><br>
+                <button><a href="get_money"></a>Get_Money</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
